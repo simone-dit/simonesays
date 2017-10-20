@@ -7,6 +7,9 @@
 	<meta name = "Zoe Shuai" content = "music, frank ocean" charset="utf-8">
 
 	<style type="text/css">
+	* {
+		  box-sizing: border-box;
+	}
 		table, th, td {
 			border: 1px solid rgb(235, 235, 233);
 			border-collapse: collapse;
@@ -15,45 +18,61 @@
 		table.center {
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 15px;
 		}
 
-		table {
-			font-size: 24px;
-			color: rgb(235, 235, 233);
-		}
 
-		th, td {
-			color: white;
+		th {
 			font-size: 16px;
 			padding: 10px;
-			text-align: left;
+			text-align: center;
 		}
 
-		div.lyrics {
-			background-color: #06A973;
-			color: maroon;
-			margin: 0 120px 0 120px;
-			padding: 12px;
+
+		td {
 			font-size: 16px;
-			font-weight: bold;
+			padding: 8px;
+			text-align: left;
+			width: 300px;
 		}
-
+		
 		body {
 			margin:0 auto;
 			background-color: rgb(255,126,48);
-			max-width: 820px;	
+			max-width: 860px;	
 		}
 
 
 		#coverphoto {
 			float:left; 
 			width:400px; height:400px;
-			margin: 0px 15px 15px 0;
+			margin: 0px 15px 15px 15px;
 		}
 
 		#summaryblock {
+			font-size: 16px;
 			text-align: justify;
-			margin: 10px 0 10px 0;
+			margin: 10px 15px 10px 0;
+		}
+
+
+
+
+		.sheetstyle {
+			background-color: rgb(235, 235, 233);
+			border-radius: 15px;
+			overflow: auto;
+			height: auto;
+
+		}
+
+
+		h2.title1 {
+			 font-size: 36px; 
+			 text-align: center; 
+			 color: #06A973;
+			 margin: 10px 0 15px 0;
+
 		}
 
 
@@ -78,8 +97,41 @@
 		}
 
 
-	</style>
+		.floating-box {
+/*		vertical-align: top;*/
+	    /*display: inline-block;*/
+	    float: left;
+	    width: 33.3%;
+/*	    height: 360px;
+*/	    /*border: 3px solid #73AD21; */
+	    
+		}
+	
 
+		.lyrics {
+					color: maroon;
+					margin: 8px;
+					font-size: 16px;
+					background-color: #06A973;
+					border-radius: 15px; 
+					padding: 15px;
+					height:300px;
+					/*overflow: auto;*/
+					
+				}
+
+
+		.blockstrip {
+			width: 100%;
+			height: 300px;
+/*			height: auto;
+				margin: auto;*/
+				/*position: relative;*/
+				
+		}		
+
+
+</style>
 
 
 </head>
@@ -98,80 +150,133 @@ document.getElementById("datedisplay").style.color = "white";
 <hr>
 
 
+<div class="sheetstyle">
+	<h2 class="title1">  
+		The Lonny Breaux Collection	
+	</h2>
 
-<h3 style="font-size: 36px; text-align: center; color: #06A973;">  
-	The Lonny Breaux Collection	
-</h3>
 
-<blockquote id="summaryblock", cite="https://genius.com/albums/Frank-ocean/The-lonny-breaux-collection">
-	<img id="coverphoto" src="http://mixtapemonkey.com/mixtape-covers/74.jpg" alt="tattoo girl" >
-	<em>The Lonny Breaux Collection</em> is an unofficial compilation of work by Frank Ocean. Released under his birth name, Christopher ‘Lonny’ Breaux, the collection is comprised of unreleased tracks, demos and reference songs. Some of the songs aren’t even written by Frank – he sung them “because [he] was being paid.”
-<br>
-<br>
+	<img id="coverphoto" src="http://mixtapemonkey.com/mixtape-covers/74.jpg" alt="image can't be found" >
 
-On the released of the unsanctioned 66-track collection, Frank said:
-<br>
-<br>
-
-<q>let’s get this out in the open. the only songs that i, myself, frank ocean, have ever released are…’pyrite’, ‘acura integurl’ & of course the songs included on ‘nostalgia, ultra’. all other songs are on the internet as a result of record industry email hacks/leaks that happened some years back. several of these songs i had no hand in writing. i only laid reference vox on em because i was being paid. the rest are incomplete ideas, reference songs that were sent out for placement on other artists. records that were never intended to represent me. </q>
-<br>
-<br>
-In 2015, Frank legally changed his name from Christopher Breaux to Frank Ocean.
-</blockquote>
-
-<br>
-<br>
-<p style="text-align: center;color: maroon;">
-	<b><ins style="font-size: 24px; ">
-		3 Great Songs You Didn't Know Frank Ocean Wrote</ins>
+	<blockquote id="summaryblock", cite="https://genius.com/albums/Frank-ocean/The-lonny-breaux-collection">
+		<em>The Lonny Breaux Collection</em> is an unofficial compilation of work by Frank Ocean. Released under his birth name, Christopher ‘Lonny’ Breaux, the collection is comprised of unreleased tracks, demos and reference songs. Some of the songs aren’t even written by Frank – he sung them “because [he] was being paid.”
 		<br>
-		that can be found in <em>The Lonny Breaux Collection</em>
-	</b>
-</p>
+		<br>
 
+		On the released of the unsanctioned 66-track collection, Frank said:
+		<br>
+		<br>
 
-<table class="center">
-	<tr>
-		<th>Lonny Breaux channel </th>
-		<th>Other channel</th>
-	</tr>
-
-	<tr>
-		<td>30. Miss You So (Prod by Midi Mafia) </td>
-		<td>Conor Maynard, <q>Pictures</q> (2012)</td>
-	</tr>
-
-	<tr>
-		<td>40. Quickly (Prod Midi Mafia) </td>
-		<td>John Legend, <q>Quickly (feat. Brandy) </q> (2008) </td>
-	</tr>
-
-	<tr>
-		<td>47. Scared Of Beautiful</td>
-		<td>Brand, <q>Scared of Beautiful</q> (2012)</td>
-	</tr>
-
-
-</table>
-<br>
-<br>
-
-<div class="lyrics">
-<h2>Miss You So</h2>
-<pre style="text-align: left;  ">
-	<q>I’ll stack these magazines in the corner
-
-	After I’m done with them
-
-	And I still got the same hope that I started with
-
-	That you’ll be in one of them
-
-	My camera shed some tears since you left him
-
-	With nothing, with nothing </q>
-</pre>
+		<q>let’s get this out in the open. the only songs that i, myself, frank ocean, have ever released are…’pyrite’, ‘acura integurl’ & of course the songs included on ‘nostalgia, ultra’. all other songs are on the internet as a result of record industry email hacks/leaks that happened some years back. several of these songs i had no hand in writing. i only laid reference vox on em because i was being paid. the rest are incomplete ideas, reference songs that were sent out for placement on other artists. records that were never intended to represent me. </q>
+		<br>
+		<br>
+		In 2015, Frank legally changed his name from Christopher Breaux to Frank Ocean.
+	</blockquote>
 </div>
+
+<br>
+
+<div class="sheetstyle">
+	<h2 class="title1">
+		
+			Three Great Songs 
+			<br>
+			You Didn't Know Frank Ocean Wrote 
+	</h2>
+
+
+
+	<table class="center">
+		<tr>
+			<th>Lonny Breaux channel </th>
+			<th>Other channel</th>
+		</tr>
+
+		<tr>
+			<td>30. Miss You So (Prod by Midi Mafia) </td>
+			<td>Conor Maynard, <q>Pictures</q> (2012)</td>
+		</tr>
+
+		<tr>
+			<td>40. Quickly (Prod Midi Mafia) </td>
+			<td>John Legend, <q>Quickly (feat. Brandy) </q> (2008) </td>
+		</tr>
+
+		<tr>
+			<td>47. Scared Of Beautiful</td>
+			<td>Brandy, <q>Scared of Beautiful</q> (2012)</td>
+		</tr>
+
+
+	</table>
+
+
+
+	<div class="blockstrip">
+		<div class="floating-box" >
+				<div class="lyrics" >
+				<h2>Miss You So</h2>
+				<p>
+					<q>I’ll stack these magazines in the corner
+					<br>	
+					After I’m done with them
+					<br>
+					And I still got the same hope that I started with
+					<br>
+					That you’ll be in one of them
+					<br>
+					My camera shed some tears since you left him
+					<br>
+					With nothing, with nothing </q>
+				</p>
+				</div>
+		</div>	
+
+
+		<div class="floating-box"  >
+				<div class="lyrics">
+				<h2>Quickly</h2>
+				<p>
+					<q>So I guess I got to love you while I'm here baby
+					<br>
+					Did you know
+					<br>
+					The news said that the sky is falling,
+					<br>
+					the globe is warming
+					<br>
+					My country warring, 
+					<br>
+					leaders are lying, 
+					<br>
+					time is running</q>
+				</p>
+				</div>
+		</div>
+
+
+		<div class="floating-box" > 
+				<div class="lyrics" >
+				<h2>Scared of Beautiful</h2>
+				<p>
+					<q>Turn a lamp on
+					<br>
+					Let me talk to you
+					<br>
+					See that light bulb, does something to you
+					<br>
+					Makes it a little harder to tell a lie don’t it?
+					<br>
+					Make it difficult to run and hide don’t it?</q>
+				</p>
+				</div>
+		</div>
+	</div>
+</div>
+
+
+
+
 
 
 <br>
